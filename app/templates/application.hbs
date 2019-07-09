@@ -1,5 +1,11 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+<h1>Ember Light Table Octane</h1>
 
-{{outlet}}
+{{#light-table this.table as |t|}}
+
+  {{t.head}}
+
+  {{t.body}}
+
+  {{t.foot}}
+
+{{/light-table}}
